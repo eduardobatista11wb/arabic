@@ -1,0 +1,252 @@
+{
+  "basic_words": [
+    {
+      "arabic": "مرحبا",
+      "transliteration": "marhaba",
+      "portuguese": "olá",
+      "category": "saudações"
+    },
+    {
+      "arabic": "شكرا",
+      "transliteration": "shukran",
+      "portuguese": "obrigado",
+      "category": "saudações"
+    },
+    {
+      "arabic": "سلام",
+      "transliteration": "salam",
+      "portuguese": "paz",
+      "category": "saudações"
+    },
+    {
+      "arabic": "أهلا",
+      "transliteration": "ahlan",
+      "portuguese": "bem-vindo",
+      "category": "saudações"
+    },
+    {
+      "arabic": "ماء",
+      "transliteration": "maa",
+      "portuguese": "água",
+      "category": "básico"
+    },
+    {
+      "arabic": "خبز",
+      "transliteration": "khubz",
+      "portuguese": "pão",
+      "category": "comida"
+    },
+    {
+      "arabic": "كتاب",
+      "transliteration": "kitaab",
+      "portuguese": "livro",
+      "category": "objetos"
+    },
+    {
+      "arabic": "بيت",
+      "transliteration": "bayt",
+      "portuguese": "casa",
+      "category": "lugares"
+    },
+    {
+      "arabic": "شمس",
+      "transliteration": "shams",
+      "portuguese": "sol",
+      "category": "natureza"
+    },
+    {
+      "arabic": "قمر",
+      "transliteration": "qamar",
+      "portuguese": "lua",
+      "category": "natureza"
+    },
+    {
+      "arabic": "باب",
+      "transliteration": "baab",
+      "portuguese": "porta",
+      "category": "objetos"
+    },
+    {
+      "arabic": "نافذة",
+      "transliteration": "naafidha",
+      "portuguese": "janela",
+      "category": "objetos"
+    },
+    {
+      "arabic": "طاولة",
+      "transliteration": "taawila",
+      "portuguese": "mesa",
+      "category": "objetos"
+    },
+    {
+      "arabic": "كرسي",
+      "transliteration": "kursi",
+      "portuguese": "cadeira",
+      "category": "objetos"
+    },
+    {
+      "arabic": "سيارة",
+      "transliteration": "sayyaara",
+      "portuguese": "carro",
+      "category": "transporte"
+    },
+    {
+      "arabic": "طائرة",
+      "transliteration": "taa'ira",
+      "portuguese": "avião",
+      "category": "transporte"
+    },
+    {
+      "arabic": "قطار",
+      "transliteration": "qitaar",
+      "portuguese": "trem",
+      "category": "transporte"
+    },
+    {
+      "arabic": "بحر",
+      "transliteration": "bahr",
+      "portuguese": "mar",
+      "category": "natureza"
+    },
+    {
+      "arabic": "جبل",
+      "transliteration": "jabal",
+      "portuguese": "montanha",
+      "category": "natureza"
+    },
+    {
+      "arabic": "شجرة",
+      "transliteration": "shajara",
+      "portuguese": "árvore",
+      "category": "natureza"
+    },
+    {
+      "arabic": "زهرة",
+      "transliteration": "zahra",
+      "portuguese": "flor",
+      "category": "natureza"
+    },
+    {
+      "arabic": "قط",
+      "transliteration": "qitt",
+      "portuguese": "gato",
+      "category": "animais"
+    },
+    {
+      "arabic": "كلب",
+      "transliteration": "kalb",
+      "portuguese": "cachorro",
+      "category": "animais"
+    },
+    {
+      "arabic": "حصان",
+      "transliteration": "hisaan",
+      "portuguese": "cavalo",
+      "category": "animais"
+    },
+    {
+      "arabic": "أسد",
+      "transliteration": "asad",
+      "portuguese": "leão",
+      "category": "animais"
+    },
+    {
+      "arabic": "أم",
+      "transliteration": "umm",
+      "portuguese": "mãe",
+      "category": "família"
+    },
+    {
+      "arabic": "أب",
+      "transliteration": "ab",
+      "portuguese": "pai",
+      "category": "família"
+    },
+    {
+      "arabic": "أخ",
+      "transliteration": "akh",
+      "portuguese": "irmão",
+      "category": "família"
+    },
+    {
+      "arabic": "أخت",
+      "transliteration": "ukht",
+      "portuguese": "irmã",
+      "category": "família"
+    },
+    {
+      "arabic": "صديق",
+      "transliteration": "sadeeq",
+      "portuguese": "amigo",
+      "category": "pessoas"
+    },
+    {
+      "arabic": "معلم",
+      "transliteration": "mu'allim",
+      "portuguese": "professor",
+      "category": "profissões"
+    },
+    {
+      "arabic": "طبيب",
+      "transliteration": "tabiib",
+      "portuguese": "médico",
+      "category": "profissões"
+    },
+    {
+      "arabic": "مهندس",
+      "transliteration": "muhandis",
+      "portuguese": "engenheiro",
+      "category": "profissões"
+    },
+    {
+      "arabic": "أحمر",
+      "transliteration": "ahmar",
+      "portuguese": "vermelho",
+      "category": "cores"
+    },
+    {
+      "arabic": "أزرق",
+      "transliteration": "azraq",
+      "portuguese": "azul",
+      "category": "cores"
+    },
+    {
+      "arabic": "أخضر",
+      "transliteration": "akhdar",
+      "portuguese": "verde",
+      "category": "cores"
+    },
+    {
+      "arabic": "أصفر",
+      "transliteration": "asfar",
+      "portuguese": "amarelo",
+      "category": "cores"
+    },
+    {
+      "arabic": "أبيض",
+      "transliteration": "abyad",
+      "portuguese": "branco",
+      "category": "cores"
+    },
+    {
+      "arabic": "أسود",
+      "transliteration": "aswad",
+      "portuguese": "preto",
+      "category": "cores"
+    }
+  ],
+  "categories": [
+    "saudações",
+    "básico",
+    "comida",
+    "objetos",
+    "lugares",
+    "natureza",
+    "transporte",
+    "animais",
+    "família",
+    "pessoas",
+    "profissões",
+    "cores"
+  ]
+} 
