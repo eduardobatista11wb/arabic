@@ -1,5 +1,16 @@
 console.log("Javascript carregado com sucesso!");
 
+// Função para obter o caminho base correto
+function getBasePath() {
+  // Se estamos em produção (GitHub Pages), o caminho pode ser diferente
+  const currentPath = window.location.pathname;
+  if (currentPath.includes("/arab/") || currentPath.includes("/arab")) {
+    return "./";
+  }
+  // Para desenvolvimento local
+  return "./";
+}
+
 // Variáveis globais
 let alphabetData = [];
 let wordsData = [];
@@ -7,11 +18,39 @@ let currentPracticeQuestion = null;
 let practiceScore = { correct: 0, total: 0 };
 let currentWord = null;
 
+// Função para tentar carregar um arquivo com múltiplos caminhos
+async function fetchWithFallback(paths) {
+  for (const path of paths) {
+    try {
+      console.log(`Tentando carregar: ${path}`);
+      const response = await fetch(path);
+      if (response.ok) {
+        console.log(`Sucesso ao carregar: ${path}`);
+        return await response.json();
+      } else {
+        console.warn(`Falha ao carregar ${path}: Status ${response.status}`);
+      }
+    } catch (e) {
+      console.warn(`Erro ao carregar ${path}:`, e);
+    }
+  }
+  throw new Error(
+    `Não foi possível carregar o arquivo. Tentou: ${paths.join(", ")}`
+  );
+}
+
 // Função para carregar o alfabeto
 async function loadAlphabet() {
   try {
-    const response = await fetch("../data/alphabet.json");
-    const data = await response.json();
+    const paths = [
+      "./data/alphabet.json",
+      "../data/alphabet.json",
+      "data/alphabet.json",
+      "/data/alphabet.json",
+    ];
+
+    const data = await fetchWithFallback(paths);
+
     // Converte o objeto em um array de letras com nome e formas
     alphabetData = Object.entries(data).map(([name, letterData]) => ({
       name,
@@ -29,8 +68,14 @@ async function loadAlphabet() {
 // Função para carregar palavras
 async function loadWords() {
   try {
-    const response = await fetch("../data/words.json");
-    const data = await response.json();
+    const paths = [
+      "./data/words.json",
+      "../data/words.json",
+      "data/words.json",
+      "/data/words.json",
+    ];
+
+    const data = await fetchWithFallback(paths);
     wordsData = data.basic_words;
     return wordsData;
   } catch (e) {
