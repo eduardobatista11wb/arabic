@@ -43,10 +43,10 @@ async function fetchWithFallback(paths) {
 async function loadAlphabet() {
   try {
     const paths = [
-      "./data/alphabet.json",
-      "../data/alphabet.json",
-      "data/alphabet.json",
-      "/data/alphabet.json",
+      "./others/alphabet.json",
+      "../others/alphabet.json",
+      "others/alphabet.json",
+      "/others/alphabet.json",
     ];
 
     const data = await fetchWithFallback(paths);
@@ -69,10 +69,10 @@ async function loadAlphabet() {
 async function loadWords() {
   try {
     const paths = [
-      "./data/words.json",
-      "../data/words.json",
-      "data/words.json",
-      "/data/words.json",
+      "./others/words.json",
+      "../others/words.json",
+      "others/words.json",
+      "/others/words.json",
     ];
 
     const data = await fetchWithFallback(paths);
