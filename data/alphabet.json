@@ -1,0 +1,254 @@
+{
+    "alif": {
+      "isolated": "ا",
+      "letter": [
+        { "form": "ا", "fatha": "اَ", "kasra": "اِ", "damma": "اُ", "sukun": "اْ" },
+        { "form": "ا", "fatha": "اَ", "kasra": "اِ", "damma": "اُ", "sukun": "اْ" },
+        { "form": "ا", "fatha": "اَ", "kasra": "اِ", "damma": "اُ", "sukun": "اْ" },
+        { "form": "ا", "fatha": "اَ", "kasra": "اِ", "damma": "اُ", "sukun": "اْ" }
+      ]
+    },
+    "ba": {
+      "isolated": "ب",
+      "letter": [
+        { "form": "ب", "fatha": "بَ", "kasra": "بِ", "damma": "بُ", "sukun": "بْ" },
+        { "form": "بـ", "fatha": "بـَ", "kasra": "بـِ", "damma": "بـُ", "sukun": "بـْ" },
+        { "form": "ـبـ", "fatha": "ـبـَ", "kasra": "ـبـِ", "damma": "ـبـُ", "sukun": "ـبـْ" },
+        { "form": "ـب", "fatha": "ـبَ", "kasra": "ـبِ", "damma": "ـبُ", "sukun": "ـبْ" }
+      ]
+    },
+    "ta": {
+      "isolated": "ت",
+      "letter": [
+        { "form": "ت", "fatha": "تَ", "kasra": "تِ", "damma": "تُ", "sukun": "تْ" },
+        { "form": "تـ", "fatha": "تـَ", "kasra": "تـِ", "damma": "تـُ", "sukun": "تـْ" },
+        { "form": "ـتـ", "fatha": "ـتـَ", "kasra": "ـتـِ", "damma": "ـتـُ", "sukun": "ـتـْ" },
+        { "form": "ـت", "fatha": "ـتَ", "kasra": "ـتِ", "damma": "ـتُ", "sukun": "ـتْ" }
+      ]
+    },
+    "tha": {
+      "isolated": "ث",
+      "letter": [
+        { "form": "ث", "fatha": "ثَ", "kasra": "ثِ", "damma": "ثُ", "sukun": "ثْ" },
+        { "form": "ثـ", "fatha": "ثـَ", "kasra": "ثـِ", "damma": "ثـُ", "sukun": "ثـْ" },
+        { "form": "ـثـ", "fatha": "ـثـَ", "kasra": "ـثـِ", "damma": "ـثـُ", "sukun": "ـثـْ" },
+        { "form": "ـث", "fatha": "ـثَ", "kasra": "ـثِ", "damma": "ـثُ", "sukun": "ـثْ" }
+      ]
+    },
+    "jim": {
+      "isolated": "ج",
+      "letter": [
+        { "form": "ج", "fatha": "جَ", "kasra": "جِ", "damma": "جُ", "sukun": "جْ" },
+        { "form": "جـ", "fatha": "جـَ", "kasra": "جـِ", "damma": "جـُ", "sukun": "جـْ" },
+        { "form": "ـجـ", "fatha": "ـجـَ", "kasra": "ـجـِ", "damma": "ـجـُ", "sukun": "ـجـْ" },
+        { "form": "ـج", "fatha": "ـجَ", "kasra": "ـجِ", "damma": "ـجُ", "sukun": "ـجْ" }
+      ]
+    },
+    "ha": {
+      "isolated": "ح",
+      "letter": [
+        { "form": "ح", "fatha": "حَ", "kasra": "حِ", "damma": "حُ", "sukun": "حْ" },
+        { "form": "حـ", "fatha": "حـَ", "kasra": "حـِ", "damma": "حـُ", "sukun": "حـْ" },
+        { "form": "ـحـ", "fatha": "ـحـَ", "kasra": "ـحـِ", "damma": "ـحـُ", "sukun": "ـحـْ" },
+        { "form": "ـح", "fatha": "ـحَ", "kasra": "ـحِ", "damma": "ـحُ", "sukun": "ـحْ" }
+      ]
+    },
+    "kha": {
+      "isolated": "خ",
+      "letter": [
+        { "form": "خ", "fatha": "خَ", "kasra": "خِ", "damma": "خُ", "sukun": "خْ" },
+        { "form": "خـ", "fatha": "خـَ", "kasra": "خـِ", "damma": "خـُ", "sukun": "خـْ" },
+        { "form": "ـخـ", "fatha": "ـخـَ", "kasra": "ـخـِ", "damma": "ـخـُ", "sukun": "ـخـْ" },
+        { "form": "ـخ", "fatha": "ـخَ", "kasra": "ـخِ", "damma": "ـخُ", "sukun": "ـخْ" }
+      ]
+    },
+    "dal": {
+      "isolated": "د",
+      "letter": [
+        { "form": "د", "fatha": "دَ", "kasra": "دِ", "damma": "دُ", "sukun": "دْ" },
+        { "form": "د", "fatha": "دَ", "kasra": "دِ", "damma": "دُ", "sukun": "دْ" },
+        { "form": "ـد", "fatha": "ـدَ", "kasra": "ـدِ", "damma": "ـدُ", "sukun": "ـدْ" },
+        { "form": "ـد", "fatha": "ـدَ", "kasra": "ـدِ", "damma": "ـدُ", "sukun": "ـدْ" }
+      ]
+    },
+    "zal": {
+      "isolated": "ذ",
+      "letter": [
+        { "form": "ذ", "fatha": "ذَ", "kasra": "ذِ", "damma": "ذُ", "sukun": "ذْ" },
+        { "form": "ذ", "fatha": "ذَ", "kasra": "ذِ", "damma": "ذُ", "sukun": "ذْ" },
+        { "form": "ـذ", "fatha": "ـذَ", "kasra": "ـذِ", "damma": "ـذُ", "sukun": "ـذْ" },
+        { "form": "ـذ", "fatha": "ـذَ", "kasra": "ـذِ", "damma": "ـذُ", "sukun": "ـذْ" }
+      ]
+    },
+    "ra": {
+      "isolated": "ر",
+      "letter": [
+        { "form": "ر", "fatha": "رَ", "kasra": "رِ", "damma": "رُ", "sukun": "رْ" },
+        { "form": "ر", "fatha": "رَ", "kasra": "رِ", "damma": "رُ", "sukun": "رْ" },
+        { "form": "ـر", "fatha": "ـرَ", "kasra": "ـرِ", "damma": "ـرُ", "sukun": "ـرْ" },
+        { "form": "ـر", "fatha": "ـرَ", "kasra": "ـرِ", "damma": "ـرُ", "sukun": "ـرْ" }
+      ]
+    },
+    "zay": {
+      "isolated": "ز",
+      "letter": [
+        { "form": "ز", "fatha": "زَ", "kasra": "زِ", "damma": "زُ", "sukun": "زْ" },
+        { "form": "ز", "fatha": "زَ", "kasra": "زِ", "damma": "زُ", "sukun": "زْ" },
+        { "form": "ـز", "fatha": "ـزَ", "kasra": "ـزِ", "damma": "ـزُ", "sukun": "ـزْ" },
+        { "form": "ـز", "fatha": "ـزَ", "kasra": "ـزِ", "damma": "ـزُ", "sukun": "ـزْ" }
+      ]
+    },
+    "sin": {
+      "isolated": "س",
+      "letter": [
+        { "form": "س", "fatha": "سَ", "kasra": "سِ", "damma": "سُ", "sukun": "سْ" },
+        { "form": "سـ", "fatha": "سـَ", "kasra": "سـِ", "damma": "سـُ", "sukun": "سـْ" },
+        { "form": "ـسـ", "fatha": "ـسـَ", "kasra": "ـسـِ", "damma": "ـسـُ", "sukun": "ـسـْ" },
+        { "form": "ـس", "fatha": "ـسَ", "kasra": "ـسِ", "damma": "ـسُ", "sukun": "ـسْ" }
+      ]
+    },
+    "shin": {
+      "isolated": "ش",
+      "letter": [
+        { "form": "ش", "fatha": "شَ", "kasra": "شِ", "damma": "شُ", "sukun": "شْ" },
+        { "form": "شـ", "fatha": "شـَ", "kasra": "شـِ", "damma": "شـُ", "sukun": "شـْ" },
+        { "form": "ـشـ", "fatha": "ـشـَ", "kasra": "ـشـِ", "damma": "ـشـُ", "sukun": "ـشـْ" },
+        { "form": "ـش", "fatha": "ـشَ", "kasra": "ـشِ", "damma": "ـشُ", "sukun": "ـشْ" }
+      ]
+    },
+    "sad": {
+      "isolated": "ص",
+      "letter": [
+        { "form": "ص", "fatha": "صَ", "kasra": "صِ", "damma": "صُ", "sukun": "صْ" },
+        { "form": "صـ", "fatha": "صـَ", "kasra": "صـِ", "damma": "صـُ", "sukun": "صـْ" },
+        { "form": "ـصـ", "fatha": "ـصـَ", "kasra": "ـصـِ", "damma": "ـصـُ", "sukun": "ـصـْ" },
+        { "form": "ـص", "fatha": "ـصَ", "kasra": "ـصِ", "damma": "ـصُ", "sukun": "ـصْ" }
+      ]
+    },
+    "dad": {
+      "isolated": "ض",
+      "letter": [
+        { "form": "ض", "fatha": "ضَ", "kasra": "ضِ", "damma": "ضُ", "sukun": "ضْ" },
+        { "form": "ضـ", "fatha": "ضـَ", "kasra": "ضـِ", "damma": "ضـُ", "sukun": "ضـْ" },
+        { "form": "ـضـ", "fatha": "ـضـَ", "kasra": "ـضـِ", "damma": "ـضـُ", "sukun": "ـضـْ" },
+        { "form": "ـض", "fatha": "ـضَ", "kasra": "ـضِ", "damma": "ـضُ", "sukun": "ـضْ" }
+      ]
+    },
+    "tah": {
+      "isolated": "ط",
+      "letter": [
+        { "form": "ط", "fatha": "طَ", "kasra": "طِ", "damma": "طُ", "sukun": "طْ" },
+        { "form": "طـ", "fatha": "طـَ", "kasra": "طـِ", "damma": "طـُ", "sukun": "طـْ" },
+        { "form": "ـطـ", "fatha": "ـطـَ", "kasra": "ـطـِ", "damma": "ـطـُ", "sukun": "ـطـْ" },
+        { "form": "ـط", "fatha": "ـطَ", "kasra": "ـطِ", "damma": "ـطُ", "sukun": "ـطْ" }
+      ]
+    },
+    "dzah": {
+      "isolated": "ظ",
+      "letter": [
+        { "form": "ظ", "fatha": "ظَ", "kasra": "ظِ", "damma": "ظُ", "sukun": "ظْ" },
+        { "form": "ظـ", "fatha": "ظـَ", "kasra": "ظـِ", "damma": "ظـُ", "sukun": "ظـْ" },
+        { "form": "ـظـ", "fatha": "ـظـَ", "kasra": "ـظـِ", "damma": "ـظـُ", "sukun": "ـظـْ" },
+        { "form": "ـظ", "fatha": "ـظَ", "kasra": "ـظِ", "damma": "ـظُ", "sukun": "ـظْ" }
+      ]
+    },
+    "ain": {
+      "isolated": "ع",
+      "letter": [
+        { "form": "ع", "fatha": "عَ", "kasra": "عِ", "damma": "عُ", "sukun": "عْ" },
+        { "form": "عـ", "fatha": "عـَ", "kasra": "عـِ", "damma": "عـُ", "sukun": "عـْ" },
+        { "form": "ـعـ", "fatha": "ـعـَ", "kasra": "ـعـِ", "damma": "ـعـُ", "sukun": "ـعـْ" },
+        { "form": "ـع", "fatha": "ـعَ", "kasra": "ـعِ", "damma": "ـعُ", "sukun": "ـعْ" }
+      ]
+    },
+    "ghain": {
+      "isolated": "غ",
+      "letter": [
+        { "form": "غ", "fatha": "غَ", "kasra": "غِ", "damma": "غُ", "sukun": "غْ" },
+        { "form": "غـ", "fatha": "غـَ", "kasra": "غـِ", "damma": "غـُ", "sukun": "غـْ" },
+        { "form": "ـغـ", "fatha": "ـغـَ", "kasra": "ـغـِ", "damma": "ـغـُ", "sukun": "ـغـْ" },
+        { "form": "ـغ", "fatha": "ـغَ", "kasra": "ـغِ", "damma": "ـغُ", "sukun": "ـغْ" }
+      ]
+    },
+    "fa": {
+      "isolated": "ف",
+      "letter": [
+        { "form": "ف", "fatha": "فَ", "kasra": "فِ", "damma": "فُ", "sukun": "فْ" },
+        { "form": "فـ", "fatha": "فـَ", "kasra": "فـِ", "damma": "فـُ", "sukun": "فـْ" },
+        { "form": "ـفـ", "fatha": "ـفـَ", "kasra": "ـفـِ", "damma": "ـفـُ", "sukun": "ـفـْ" },
+        { "form": "ـف", "fatha": "ـفَ", "kasra": "ـفِ", "damma": "ـفُ", "sukun": "ـفْ" }
+      ]
+    },
+    "qaf": {
+      "isolated": "ق",
+      "letter": [
+        { "form": "ق", "fatha": "قَ", "kasra": "قِ", "damma": "قُ", "sukun": "قْ" },
+        { "form": "قـ", "fatha": "قـَ", "kasra": "قـِ", "damma": "قـُ", "sukun": "قـْ" },
+        { "form": "ـقـ", "fatha": "ـقـَ", "kasra": "ـقـِ", "damma": "ـقـُ", "sukun": "ـقـْ" },
+        { "form": "ـق", "fatha": "ـقَ", "kasra": "ـقِ", "damma": "ـقُ", "sukun": "ـقْ" }
+      ]
+    },
+    "kaf": {
+      "isolated": "ك",
+      "letter": [
+        { "form": "ك", "fatha": "كَ", "kasra": "كِ", "damma": "كُ", "sukun": "كْ" },
+        { "form": "كـ", "fatha": "كـَ", "kasra": "كـِ", "damma": "كـُ", "sukun": "كـْ" },
+        { "form": "ـكـ", "fatha": "ـكـَ", "kasra": "ـكـِ", "damma": "ـكـُ", "sukun": "ـكـْ" },
+        { "form": "ـك", "fatha": "ـكَ", "kasra": "ـكِ", "damma": "ـكُ", "sukun": "ـكْ" }
+      ]
+    },
+    "lam": {
+      "isolated": "ل",
+      "letter": [
+        { "form": "ل", "fatha": "لَ", "kasra": "لِ", "damma": "لُ", "sukun": "لْ" },
+        { "form": "لـ", "fatha": "لـَ", "kasra": "لـِ", "damma": "لـُ", "sukun": "لـْ" },
+        { "form": "ـلـ", "fatha": "ـلـَ", "kasra": "ـلـِ", "damma": "ـلـُ", "sukun": "ـلـْ" },
+        { "form": "ـل", "fatha": "ـلَ", "kasra": "ـلِ", "damma": "ـلُ", "sukun": "ـلْ" }
+      ]
+    },
+    "mim": {
+      "isolated": "م",
+      "letter": [
+        { "form": "م", "fatha": "مَ", "kasra": "مِ", "damma": "مُ", "sukun": "مْ" },
+        { "form": "مـ", "fatha": "مـَ", "kasra": "مـِ", "damma": "مـُ", "sukun": "مـْ" },
+        { "form": "ـمـ", "fatha": "ـمـَ", "kasra": "ـمـِ", "damma": "ـمـُ", "sukun": "ـمـْ" },
+        { "form": "ـم", "fatha": "ـمَ", "kasra": "ـمِ", "damma": "ـمُ", "sukun": "ـمْ" }
+      ]
+    },
+    "nun": {
+      "isolated": "ن",
+      "letter": [
+        { "form": "ن", "fatha": "نَ", "kasra": "نِ", "damma": "نُ", "sukun": "نْ" },
+        { "form": "نـ", "fatha": "نـَ", "kasra": "نـِ", "damma": "نـُ", "sukun": "نـْ" },
+        { "form": "ـنـ", "fatha": "ـنـَ", "kasra": "ـنـِ", "damma": "ـنـُ", "sukun": "ـنـْ" },
+        { "form": "ـن", "fatha": "ـنَ", "kasra": "ـنِ", "damma": "ـنُ", "sukun": "ـنْ" }
+      ]
+    },
+    "han": {
+      "isolated": "ه",
+      "letter": [
+        { "form": "ه", "fatha": "هَ", "kasra": "هِ", "damma": "هُ", "sukun": "هْ" },
+        { "form": "هـ", "fatha": "هـَ", "kasra": "هـِ", "damma": "هـُ", "sukun": "هـْ" },
+        { "form": "ـهـ", "fatha": "ـهـَ", "kasra": "ـهـِ", "damma": "ـهـُ", "sukun": "ـهـْ" },
+        { "form": "ـه", "fatha": "ـهَ", "kasra": "ـهِ", "damma": "ـهُ", "sukun": "ـهْ" }
+      ]
+    },
+    "waw": {
+      "isolated": "و",
+      "letter": [
+        { "form": "و", "fatha": "وَ", "kasra": "وِ", "damma": "وُ", "sukun": "وْ" },
+        { "form": "و", "fatha": "وَ", "kasra": "وِ", "damma": "وُ", "sukun": "وْ" },
+        { "form": "ـو", "fatha": "ـوَ", "kasra": "ـوِ", "damma": "ـوُ", "sukun": "ـوْ" },
+        { "form": "ـو", "fatha": "ـوَ", "kasra": "ـوِ", "damma": "ـوُ", "sukun": "ـوْ" }
+      ]
+    },
+    "ya": {
+      "isolated": "ي",
+      "letter": [
+        { "form": "ي", "fatha": "يَ", "kasra": "يِ", "damma": "يُ", "sukun": "يْ" },
+        { "form": "يـ", "fatha": "يـَ", "kasra": "يـِ", "damma": "يـُ", "sukun": "يـْ" },
+        { "form": "ـيـ", "fatha": "ـيـَ", "kasra": "ـيـِ", "damma": "ـيـُ", "sukun": "ـيـْ" },
+        { "form": "ـي", "fatha": "ـيَ", "kasra": "ـيِ", "damma": "ـيُ", "sukun": "ـيْ" }
+      ]
+    }
+  }
