@@ -97,52 +97,103 @@ function speakArabic(text) {
 function showRandomLetter() {
   if (!alphabetData.length) return;
 
+  const tipo = document.getElementById("tipoSorteio")?.value || "alfabeto";
   const idx = Math.floor(Math.random() * alphabetData.length);
   const letter = alphabetData[idx];
+  let resultado = "";
+  let explicacao = "";
+  let formas = ["", "", "", ""]; // isolada, inicial, medial, final
+  let labelVogal = "";
 
-  // Sorteia qual forma mostrar: 0=isolated, 1=initial, 2=medial, 3=final
-  const formIdx = Math.floor(Math.random() * letter.letters.length);
-  const formObj = letter.letters[formIdx];
+  // Sempre usar a forma isolada para o sorteio simples
+  const forms = letter.letters;
 
-  // Sorteia o diacrítico
-  const diacritics = ["fatha", "kasra", "damma", "sukun"];
-  const diacriticIdx = Math.floor(Math.random() * diacritics.length);
-  const diacriticKey = diacritics[diacriticIdx];
+  switch (tipo) {
+    case "alfabeto":
+      resultado = letter.isolated;
+      explicacao = "Letra isolada";
+      formas = [forms[0].form, forms[1].form, forms[2].form, forms[3].form];
+      break;
+    case "alfabeto_fatha":
+      resultado = forms[0].fatha;
+      explicacao = "Letra com Fatha ( َ )";
+      formas = [forms[0].fatha, forms[1].fatha, forms[2].fatha, forms[3].fatha];
+      labelVogal = "Fatha";
+      break;
+    case "alfabeto_kasra":
+      resultado = forms[0].kasra;
+      explicacao = "Letra com Kasra ( ِ )";
+      formas = [forms[0].kasra, forms[1].kasra, forms[2].kasra, forms[3].kasra];
+      labelVogal = "Kasra";
+      break;
+    case "alfabeto_damma":
+      resultado = forms[0].damma;
+      explicacao = "Letra com Damma ( ُ )";
+      formas = [forms[0].damma, forms[1].damma, forms[2].damma, forms[3].damma];
+      labelVogal = "Damma";
+      break;
+    case "alfabeto_sukun":
+      resultado = forms[0].sukun;
+      explicacao = "Letra com Sukun ( ْ )";
+      formas = [forms[0].sukun, forms[1].sukun, forms[2].sukun, forms[3].sukun];
+      labelVogal = "Sukun";
+      break;
+    case "alfabeto_todas": {
+      const vogais = ["fatha", "kasra", "damma", "sukun"];
+      const labelMap = {
+        fatha: "Fatha ( َ )",
+        kasra: "Kasra ( ِ )",
+        damma: "Damma ( ُ )",
+        sukun: "Sukun ( ْ )",
+      };
+      const idxVogal = Math.floor(Math.random() * vogais.length);
+      const vogal = vogais[idxVogal];
+      resultado = forms[0][vogal];
+      explicacao = "Letra com " + labelMap[vogal];
+      formas = [
+        forms[0][vogal],
+        forms[1][vogal],
+        forms[2][vogal],
+        forms[3][vogal],
+      ];
+      labelVogal = labelMap[vogal];
+      break;
+    }
+    default:
+      resultado = letter.isolated;
+      explicacao = "Letra isolada";
+      formas = [forms[0].form, forms[1].form, forms[2].form, forms[3].form];
+  }
 
-  const diacriticLabelMap = {
-    fatha: "Fatha ( َ )",
-    kasra: "Kasra ( ِ )",
-    damma: "Damma ( ُ )",
-    sukun: "Sukun ( ْ )",
-  };
-
-  const formLabels = ["Isolada", "Inicial", "Medial", "Final"];
-
-  document.getElementById("alphabet-container").innerHTML = `
+  document.getElementById("resultado").innerHTML = `
     <div class="flex-col flex-center">
-        <span class="alphabet-large" title="${letter.name}">
-            ${formObj[diacriticKey]}
-        </span>
-        <small class="alphabet-small text-light p-2 blurred-text" id="letter-name">
-            ${letter.name}
-        </small>
-        <div class="flex-row flex-center" style="margin-top:8px;">
-            <div class="flex-col flex-center p-2">
-                <span class="alphabet-medium">${letter.letters[1].fatha}</span>
-                <small class="text-xs">Inicial</small>
-            </div>
-            <div class="flex-col flex-center p-2">
-                <span class="alphabet-medium">${letter.letters[2].fatha}</span>
-                <small class="text-xs">Medial</small>
-            </div>
-            <div class="flex-col flex-center p-2">
-                <span class="alphabet-medium">${letter.letters[3].fatha}</span>
-                <small class="text-xs">Final</small>
-            </div>
+      <span class="alphabet-large" title="${letter.name}">${resultado}</span>
+      <small class="alphabet-small text-light p-2 blurred-text" id="letter-name">${
+        letter.name
+      }</small>
+      <div class="flex-row flex-center p-2">
+        <small class="text-xs">${explicacao}</small>
+      </div>
+      <div class="flex-row flex-center" style="margin-top:8px;">
+        <div class="flex-col flex-center p-2">
+          <span class="alphabet-medium">${formas[1]}</span>
+          <small class="text-xs">Inicial${
+            labelVogal ? " (" + labelVogal + ")" : ""
+          }</small>
         </div>
-        <div class="flex-row flex-center p-2">
-            <small class="text-xs">Forma: ${formLabels[formIdx]} | Diacrítico: ${diacriticLabelMap[diacriticKey]}</small>
+        <div class="flex-col flex-center p-2">
+          <span class="alphabet-medium">${formas[2]}</span>
+          <small class="text-xs">Medial${
+            labelVogal ? " (" + labelVogal + ")" : ""
+          }</small>
         </div>
+        <div class="flex-col flex-center p-2">
+          <span class="alphabet-medium">${formas[3]}</span>
+          <small class="text-xs">Final${
+            labelVogal ? " (" + labelVogal + ")" : ""
+          }</small>
+        </div>
+      </div>
     </div>
   `;
 
@@ -161,23 +212,93 @@ function showAlphabetGrid() {
   const grid = document.getElementById("alphabet-grid");
   if (!grid || !alphabetData.length) return;
 
+  const tipo = document.getElementById("tipoAlfabetoGrid")?.value || "alfabeto";
+
+  // Decide como mostrar cada letra
   grid.innerHTML = alphabetData
-    .map(
-      (letter) => `
-    <div class="letter-card" onclick="showLetterDetails('${letter.name}')">
-      <div class="letter-main">${letter.isolated}</div>
-      <div class="letter-name">${letter.name}</div>
-      <div class="letter-forms">
-        <span class="letter-form">${letter.letters[1].form}</span>
-        <span class="letter-form">${letter.letters[2].form}</span>
-        <span class="letter-form">${letter.letters[3].form}</span>
-      </div>
-      <button class="letter-sound" onclick="event.stopPropagation(); speakArabic('${letter.isolated}')">
-        🔊
-      </button>
-    </div>
-  `
-    )
+    .map((letter) => {
+      const forms = letter.letters;
+      let formas = ["", "", "", ""];
+      let labelVogal = "";
+      switch (tipo) {
+        case "alfabeto":
+          formas = [forms[0].form, forms[1].form, forms[2].form, forms[3].form];
+          break;
+        case "alfabeto_fatha":
+          formas = [
+            forms[0].fatha,
+            forms[1].fatha,
+            forms[2].fatha,
+            forms[3].fatha,
+          ];
+          labelVogal = "Fatha";
+          break;
+        case "alfabeto_kasra":
+          formas = [
+            forms[0].kasra,
+            forms[1].kasra,
+            forms[2].kasra,
+            forms[3].kasra,
+          ];
+          labelVogal = "Kasra";
+          break;
+        case "alfabeto_damma":
+          formas = [
+            forms[0].damma,
+            forms[1].damma,
+            forms[2].damma,
+            forms[3].damma,
+          ];
+          labelVogal = "Damma";
+          break;
+        case "alfabeto_sukun":
+          formas = [
+            forms[0].sukun,
+            forms[1].sukun,
+            forms[2].sukun,
+            forms[3].sukun,
+          ];
+          labelVogal = "Sukun";
+          break;
+        case "alfabeto_todas": {
+          const vogais = ["fatha", "kasra", "damma", "sukun"];
+          const idxVogal = Math.floor(Math.random() * vogais.length);
+          const vogal = vogais[idxVogal];
+          const labelMap = {
+            fatha: "Fatha",
+            kasra: "Kasra",
+            damma: "Damma",
+            sukun: "Sukun",
+          };
+          formas = [
+            forms[0][vogal],
+            forms[1][vogal],
+            forms[2][vogal],
+            forms[3][vogal],
+          ];
+          labelVogal = labelMap[vogal];
+          break;
+        }
+        default:
+          formas = [forms[0].form, forms[1].form, forms[2].form, forms[3].form];
+      }
+      return `
+        <div class="letter-card" onclick="showLetterDetails('${letter.name}')">
+          <div class="letter-main">${formas[0]}</div>
+          <div class="letter-name">${letter.name}</div>
+          <div class="letter-forms">
+            <span class="letter-form">${formas[1]}</span>
+            <span class="letter-form">${formas[2]}</span>
+            <span class="letter-form">${formas[3]}</span>
+          </div>
+          <button class="letter-sound" onclick="event.stopPropagation(); speakArabic('${
+            formas[0] || letter.isolated
+          }')">
+            🔊
+          </button>
+        </div>
+      `;
+    })
     .join("");
 }
 
@@ -447,6 +568,12 @@ function switchTab(tabName) {
 // Event listeners
 document.addEventListener("DOMContentLoaded", async () => {
   await loadAlphabet();
+  await loadWords();
+  showRandomWord();
+
+  // Popular categorias e mostrar todas as palavras
+  populateCategorySelector();
+  showWordsByCategory();
 
   // Tab navigation
   document.querySelectorAll(".tab-btn").forEach((btn) => {
@@ -454,6 +581,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       switchTab(btn.dataset.tab);
     });
   });
+
+  // Atualiza o grid do alfabeto ao mudar o select
+  const tipoAlfabetoGrid = document.getElementById("tipoAlfabetoGrid");
+  if (tipoAlfabetoGrid) {
+    tipoAlfabetoGrid.addEventListener("change", showAlphabetGrid);
+  }
 
   // Random letter functionality
   const randomizeBtn = document.getElementById("randomize-btn");
@@ -465,8 +598,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const soundBtn = document.getElementById("sound-btn");
   if (soundBtn) {
     soundBtn.addEventListener("click", () => {
-      const container = document.getElementById("alphabet-container");
-      const span = container.querySelector(".alphabet-large");
+      const resultado = document.getElementById("resultado");
+      const span = resultado?.querySelector(".alphabet-large");
       if (span) {
         speakArabic(span.textContent.trim());
       }
@@ -491,6 +624,21 @@ document.addEventListener("DOMContentLoaded", async () => {
   window.speechSynthesis.onvoiceschanged = () => {
     console.log("Vozes disponíveis:", window.speechSynthesis.getVoices());
   };
+
+  document
+    .getElementById("random-word-btn")
+    .addEventListener("click", showRandomWord);
+  document.getElementById("word-sound-btn").addEventListener("click", () => {
+    const wordDisplay = document.getElementById("word-display");
+    const arabic = wordDisplay
+      ?.querySelector(".word-arabic")
+      ?.textContent?.trim();
+    if (arabic) speakArabic(arabic);
+  });
+  document.getElementById("category-select").addEventListener("change", (e) => {
+    showWordsByCategory(e.target.value);
+  });
+  showWordsByCategory();
 });
 
 // Funções globais para uso no HTML

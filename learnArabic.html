@@ -23,7 +23,17 @@
     <main class="main-content">
         <!-- Tab: Letra Aleatória -->
         <div id="random-tab" class="tab-content active">
-            <div id="alphabet-container" class="flex-center p-4" style="margin: 2em 0;"></div>
+            <div id="alphabet-container" class="flex-center p-4" style="margin: 2em 0;">
+                <label for="tipoSorteio">Tipo de sorteio:</label>
+                <select id="tipoSorteio">
+                    <option value="alfabeto">Apenas Alfabeto</option>
+                    <option value="alfabeto_fatha">Alfabeto + Fatha</option>
+                    <option value="alfabeto_kasra">Alfabeto + Kasra</option>
+                    <option value="alfabeto_damma">Alfabeto + Damma</option>
+                    <option value="alfabeto_sukun">Alfabeto + Sukun</option>
+                    <option value="alfabeto_todas">Alfabeto + Todas as Vogais</option>
+                </select>
+            </div>
             <div class="controls">
                 <button id="randomize-btn" class="btn">Sortear Letra</button>
                 <button id="sound-btn" class="btn m-2">
@@ -33,10 +43,22 @@
                     Ouvir
                 </button>
             </div>
+            <div id="resultado"></div>
         </div>
 
         <!-- Tab: Alfabeto Completo -->
         <div id="alphabet-tab" class="tab-content">
+            <div class="flex-center p-4" style="margin-bottom: 1em;">
+                <label for="tipoAlfabetoGrid">Tipo de exibição:</label>
+                <select id="tipoAlfabetoGrid">
+                    <option value="alfabeto">Apenas Alfabeto</option>
+                    <option value="alfabeto_fatha">Alfabeto + Fatha</option>
+                    <option value="alfabeto_kasra">Alfabeto + Kasra</option>
+                    <option value="alfabeto_damma">Alfabeto + Damma</option>
+                    <option value="alfabeto_sukun">Alfabeto + Sukun</option>
+                    <option value="alfabeto_todas">Alfabeto + Todas as Vogais</option>
+                </select>
+            </div>
             <div class="alphabet-grid" id="alphabet-grid"></div>
         </div>
 
