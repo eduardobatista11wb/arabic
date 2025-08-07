@@ -1,0 +1,30 @@
+.grid {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+}
+
+.grid > header.header {
+    grid-area: header;
+    width: 100%;
+}
+
+.grid > main.main {
+    grid-area: main;
+    width: 100%;
+}
+
+.grid > footer.footer {
+    grid-area: footer;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+}
+

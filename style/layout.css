@@ -1,0 +1,56 @@
+@import url('variable.css');
+
+
+nav {
+    /* background-color: silver; */
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    display: list-item;
+    padding: 8px;
+}
+
+nav a{
+    display: flex;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* Adicione ao seu CSS */
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 0.5em 0;
+    min-width: 180px;
+    z-index: 100;
+}
+
+.has-submenu:hover .submenu,
+.has-submenu:focus-within .submenu {
+    display: block;
+}
+
+.submenu li a {
+    display: block;
+    padding: 0.5em 1em;
+    color: #333;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background: var(--color-primary, #f0f0f0);
+    color: #000;
+}

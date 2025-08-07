@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda Árabe - Alfabeto Interativo</title>
+    <link rel="stylesheet" href="../../style/style.css">
+        <link rel="stylesheet" href="../../style/layout.css">
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=WwVCYkPQ"></script>
+</head>
+<body>
+    <div class="grid">
+        <header class="header flex justify-content-center align-items-center">
+            <div class="container flex row justify-content-between align-items-center width-100">
+                <h1 class="text-title heading">Aprenda Árabe</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="/pages/blog/index.html">Blog</a></li>
+                        <li><a href="/pages/contact/index.html">Contato</a></li>
+                        <li class="has-submenu">
+                            <a href="/pages/learn/index.html">Conteúdos</a>
+                            <ul class="submenu">
+                                <li><a href="/pages/alphabet/index.html">Alfabeto Árabe</a></li>
+                                <li><a href="/pages/words/index.html">Palavras</a></li>
+                                <li><a href="/pages/test/index.html">Exercícios</a></li>
+                                <li><a href="/pages/pronounce/index.html">Pronúncia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/pages/pronounce/index.html">Teclado</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <main class="main">
+        <!-- Tab: Letra Aleatória -->
+        <div class="hero-content container width-100 flex column flex-center">
+            <div id="alphabet-container" class="flex-center p-4" style="margin: 2em 0;">
+                <div>
+                    <label for="category-select">Tipo de sorteio:</label>
+                    <select id="category-select" class="category-select">
+                        <option value="alfabeto">Apenas Alfabeto</option>
+                        <option value="alfabeto_fatha">Alfabeto + Fatha</option>
+                        <option value="alfabeto_kasra">Alfabeto + Kasra</option>
+                        <option value="alfabeto_damma">Alfabeto + Damma</option>
+                        <option value="alfabeto_sukun">Alfabeto + Sukun</option>
+                        <option value="alfabeto_todas">Alfabeto + Todas as Vogais</option>
+                    </select>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="randomize-btn" class="btn">Sortear Letra</button>
+                <button id="sound-btn" class="btn m-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.536 14.01a.75.75 0 0 1-1.06 0l-3.536-3.536H3.5A1.5 1.5 0 0 1 2 9V7a1.5 1.5 0 0 1 1.5-1.5h3.44l3.536-3.536a.75.75 0 0 1 1.06 1.06L8.56 6.5H3.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h5.06l3.536 3.536a.75.75 0 0 1 0 1.06z"/>
+                    </svg>
+                    Ouvir
+                </button>
+            </div>
+            <div id="resultado"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="../../index.html" class="btn">Voltar ao Início</a>
+    </footer>
+
+    <script src="../../javascript/pronounce.js"></script>
+</body>
+</html>

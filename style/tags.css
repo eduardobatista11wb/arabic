@@ -1,0 +1,133 @@
+
+/* Corpo */
+body {
+    font-family: Urbanist, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Cabeçalho */
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--padding);
+  }
+  
+  header h1 {
+    font-size: var(--header-font-size);
+  }
+  
+  /* Navegação */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--padding);
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Seções principais */
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding);
+  }
+  
+  section {
+    overflow: hidden;
+  }
+  
+  /* Rodapé */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: var(--padding);
+    color: var(--secondary-color);
+    background-color: var(--white-color);
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Botão */
+  
+  button {
+    font-family: Urbanist, sans-serif;
+    font-size: 20px;
+    background-color: #FFA310;
+    padding: 20px;
+    font-weight: bold;
+    color: #FFF;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    z-index: 10; 
+    box-shadow: 
+        4px 4px 0px rgba(255, 0, 247, 1),  /* Primeira sombra */
+        -3px 0px 0px rgba(0, 255, 238, 1); /* Segunda sombra */
+  }
+  
+  button:hover {
+    animation: glitch 1.5s infinite;
+  }
+  
+  button::before,
+  button::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: none;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch-lines 1.5s infinite linear;
+    opacity: 0; /* Apenas visível ao hover */
+  }
+  
+  button:hover::before,
+  button:hover::after {
+    opacity: 1;
+  }
+  
+  button::before {
+    left: 2px;
+    text-shadow: 4px 0 rgba(255, 0, 247, 0.8);
+    animation-delay: 0.2s;
+  }
+  
+  button::after {
+    left: -2px;
+    text-shadow: -4px 0 rgba(0, 255, 238, 0.8);
+    animation-delay: 0.3s;
+  }

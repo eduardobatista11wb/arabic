@@ -1,0 +1,32 @@
+
+:root {
+    /* 🎨 Paleta principal */
+    --color-primary: #1e40af;       /* azul escuro */
+    --color-secondary: #f59e0b;     /* amarelo ouro */
+    --color-accent: #10b981;        /* verde água */
+
+    /* 🖥️ Backgrounds */
+    --color-background: #f9fafb;    /* cinza claro */
+    --color-surface: #ffffff;       /* branco */
+
+    /* 🖋️ Texto */
+    --color-text: #111827;          /* preto acinzentado */
+    --color-text-light: #6b7280;    /* cinza médio */
+
+    /* 🟨 Estados */
+    --color-success: #16a34a;
+    --color-warning: #facc15;
+    --color-error: #dc2626;
+
+    --color-bg: #090909;
+    --color-text: #C0C0B9;
+    --color-primary: #78875D;
+    --color-primary-hover: #8c9b70;
+    --color-title: #FFFFFF;
+    --color-success: #4CAF50;
+    --color-error: #f44336;
+    --color-warning: #ff9800;
+    --font-main: 'Source Serif Pro', serif;
+    --radius-pill: 40px;
+    --radius-card: 12px;
+}

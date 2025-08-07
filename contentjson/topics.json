@@ -1,0 +1,46 @@
+{
+    "alphabet": {
+      "title": "Alfabeto",
+      "description": "Aprenda o alfabeto árabe, as formas das letras e como elas se conectam"
+    },
+    "harakat": {
+      "title": "Vogais curtas (Harakāt)",
+      "description": "Estude os sinais diacríticos que representam vogais curtas (fatha, kasra, damma) usados no Alcorão"
+    },
+    "tanwin": {
+      "title": "Tanwīn",
+      "description": "Aprenda os sons de terminação -an, -in, -un usados frequentemente na recitação"
+    },
+    "sukun_shadda": {
+      "title": "Sukūn e Shadda",
+      "description": "Entenda como ler consoantes sem vogal (sukūn) e com ênfase (shadda)"
+    },
+    "long_vowels": {
+      "title": "Vogais Longas",
+      "description": "Aprenda as vogais longas (alif, yā’, wāw) que mudam o som das letras"
+    },
+    "madd": {
+      "title": "Regras de Madd",
+      "description": "Estude os alongamentos vocálicos específicos da recitação corânica"
+    },
+    "tajweed_intro": {
+      "title": "Introdução ao Tajwīd",
+      "description": "Conheça as regras básicas de pronúncia correta do Alcorão"
+    },
+    "makharij": {
+      "title": "Pontos de Articulação (Makharij)",
+      "description": "Aprenda como e onde cada letra é articulada corretamente"
+    },
+    "qalqalah": {
+      "title": "Qalqalah",
+      "description": "Estude o som de eco de certas letras quando estão em sukun ou no final da recitação"
+    },
+    "practice_reading": {
+      "title": "Prática de Leitura",
+      "description": "Exercite a leitura com palavras e versos simples do Alcorão"
+    },
+    "short_suras": {
+      "title": "Memorização de Suras Curtas",
+      "description": "Comece a memorizar pequenas suras com leitura e pronúncia corretas"
+    }
+  } 

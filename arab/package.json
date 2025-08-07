@@ -1,0 +1,24 @@
+{
+  "name": "aprenda-arabe",
+  "version": "1.0.0",
+  "description": "A web application to help users learn the Arabic alphabet interactively.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "keywords": [
+    "arabic",
+    "language",
+    "learning",
+    "education"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

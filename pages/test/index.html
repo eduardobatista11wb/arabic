@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenda Árabe - Alfabeto Interativo</title>
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/layout.css">
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=WwVCYkPQ"></script>
+</head>
+<body>
+    <div class="grid">
+        <header class="header flex justify-content-center align-items-center">
+            <div class="container flex row justify-content-between align-items-center width-100">
+                <h1 class="text-title heading">Aprenda Árabe</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="/pages/blog/index.html">Blog</a></li>
+                        <li><a href="/pages/contact/index.html">Contato</a></li>
+                        <li class="has-submenu">
+                            <a href="/pages/learn/index.html">Conteúdos</a>
+                            <ul class="submenu">
+                                <li><a href="/pages/alphabet/index.html">Alfabeto Árabe</a></li>
+                                <li><a href="/pages/words/index.html">Palavras</a></li>
+                                <li><a href="/pages/test/index.html">Exercícios</a></li>
+                                <li><a href="/pages/pronounce/index.html">Pronúncia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/pages/pronounce/index.html">Teclado</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Tab: Prática -->
+            <div id="practice-tab" class="content">
+                <div class="practice-container">
+                    <h3>Modo de Prática</h3>
+                    <p>Teste seu conhecimento do alfabeto árabe!</p>
+                    <div class="practice-controls">
+                        <button id="start-practice" class="btn">Iniciar Prática</button>
+                        <button id="reset-practice" class="btn m-2">Reiniciar</button>
+                    </div>
+                    <div id="practice-area" class="practice-area" style="display: none;">
+                        <div id="practice-question" class="practice-question"></div>
+                        <div id="practice-options" class="practice-options"></div>
+                        <div id="practice-score" class="practice-score"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <a href="../../index.html" class="btn">Voltar ao Início</a>
+        </footer>
+    </div>
+    <script src="../../javascript/test.js"></script>
+</body>
+</html>
